@@ -1,0 +1,33 @@
+{
+  "name": "broswerify-in-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify demo/x.js  | uglifyjs -mc > bundle.js",
+    "test": "echo \"Error: no test specified\" phoeon and shasha && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "",
+    "requirejs": ""
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "browserify": "^11.0.1",
+    "reactify": "^1.1.1",
+    "uglifyjs": "^2.4.10",
+    "watchify": "^3.3.1"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "reactify",
+        {
+          "es6": true
+        }
+      ]
+    ]
+  }
+}
